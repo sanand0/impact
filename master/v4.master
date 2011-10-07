@@ -82,23 +82,23 @@
                     <SharePoint:MenuItemTemplate runat="server" id="MenuItem_CommitNewUI" Text="<%$Resources:wss,siteactions_commitnewui%>" Description="<%$Resources:wss,siteactions_commitnewuidescription%>" ImageUrl="/_layouts/images/visualupgradehh.png" MenuGroupId="300" Sequence="330" UseShortId="true" ClientOnClickScriptContainingPrefixedUrl="GoToPage('~site/_layouts/prjsetng.aspx')" PermissionsString="ManageWeb" PermissionMode="Any" ShowOnlyIfUIVersionConfigurationEnabled="true" />
                   </SharePoint:FeatureMenuTemplate>
                 </CustomTemplate>
-              </SharePoint:SiteActions></span>
-              <asp:ContentPlaceHolder id="PlaceHolderGlobalNavigation" runat="server">
-                <SharePoint:PopoutMenu runat="server" ID="GlobalBreadCrumbNavPopout" IconUrl="/_layouts/images/fgimg.png" IconAlt="<%$Resources:wss,master_breadcrumbIconAlt%>" IconOffsetX=0 IconOffsetY=112 IconWidth=16 IconHeight=16 AnchorCss="s4-breadcrumb-anchor" AnchorOpenCss="s4-breadcrumb-anchor-open" MenuCss="s4-breadcrumb-menu">
-                  <div class="s4-breadcrumb-top">
-                    <asp:Label runat="server" CssClass="s4-breadcrumb-header" Text="<%$Resources:wss,master_breadcrumbHeader%>" />
-                  </div>
-                  <asp:ContentPlaceHolder id="PlaceHolderTitleBreadcrumb" runat="server">
-                    <SharePoint:ListSiteMapPath runat="server" SiteMapProviders="SPSiteMapProvider,SPContentMapProvider" RenderCurrentNodeAsLink="false" PathSeparator="" CssClass="s4-breadcrumb" NodeStyle-CssClass="s4-breadcrumbNode" CurrentNodeStyle-CssClass="s4-breadcrumbCurrentNode" RootNodeStyle-CssClass="s4-breadcrumbRootNode" NodeImageOffsetX=0 NodeImageOffsetY=353 NodeImageWidth=16 NodeImageHeight=16 NodeImageUrl="/_layouts/images/fgimg.png" RTLNodeImageOffsetX=0 RTLNodeImageOffsetY=376 RTLNodeImageWidth=16 RTLNodeImageHeight=16 RTLNodeImageUrl="/_layouts/images/fgimg.png" HideInteriorRootNodes="true" SkipLinkText="" />
-                  </asp:ContentPlaceHolder>
-                </SharePoint:PopoutMenu>
-                <div class="s4-die">
-                  <asp:ContentPlaceHolder id="PlaceHolderGlobalNavigationSiteMap" runat="server" Visible="false">
-                  </asp:ContentPlaceHolder>
-                </div>
-              </asp:ContentPlaceHolder>
-              <SharePoint:PageStateActionButton id="PageStateActionButton" runat="server" Visible="false" />
+              </SharePoint:SiteActions>
             </span>
+            <asp:ContentPlaceHolder id="PlaceHolderGlobalNavigation" runat="server">
+              <SharePoint:PopoutMenu runat="server" ID="GlobalBreadCrumbNavPopout" IconUrl="/_layouts/images/fgimg.png" IconAlt="<%$Resources:wss,master_breadcrumbIconAlt%>" IconOffsetX=0 IconOffsetY=112 IconWidth=16 IconHeight=16 AnchorCss="s4-breadcrumb-anchor" AnchorOpenCss="s4-breadcrumb-anchor-open" MenuCss="s4-breadcrumb-menu">
+                <div class="s4-breadcrumb-top">
+                  <asp:Label runat="server" CssClass="s4-breadcrumb-header" Text="<%$Resources:wss,master_breadcrumbHeader%>" />
+                </div>
+                <asp:ContentPlaceHolder id="PlaceHolderTitleBreadcrumb" runat="server">
+                  <SharePoint:ListSiteMapPath runat="server" SiteMapProviders="SPSiteMapProvider,SPContentMapProvider" RenderCurrentNodeAsLink="false" PathSeparator="" CssClass="s4-breadcrumb" NodeStyle-CssClass="s4-breadcrumbNode" CurrentNodeStyle-CssClass="s4-breadcrumbCurrentNode" RootNodeStyle-CssClass="s4-breadcrumbRootNode" NodeImageOffsetX=0 NodeImageOffsetY=353 NodeImageWidth=16 NodeImageHeight=16 NodeImageUrl="/_layouts/images/fgimg.png" RTLNodeImageOffsetX=0 RTLNodeImageOffsetY=376 RTLNodeImageWidth=16 RTLNodeImageHeight=16 RTLNodeImageUrl="/_layouts/images/fgimg.png" HideInteriorRootNodes="true" SkipLinkText="" />
+                </asp:ContentPlaceHolder>
+              </SharePoint:PopoutMenu>
+              <div class="s4-die">
+                <asp:ContentPlaceHolder id="PlaceHolderGlobalNavigationSiteMap" runat="server" Visible="false">
+                </asp:ContentPlaceHolder>
+              </div>
+            </asp:ContentPlaceHolder>
+            <SharePoint:PageStateActionButton id="PageStateActionButton" runat="server" Visible="false" />
           </SharePoint:SPRibbonPeripheralContent>
           <SharePoint:SPRibbonPeripheralContent runat="server" Location="TabRowRight" ID="RibbonTabRowRight" CssClass="s4-trc-container s4-notdlg">
             <SharePoint:DelegateControl runat="server" ID="GlobalDelegate0" ControlId="GlobalSiteLink0" />

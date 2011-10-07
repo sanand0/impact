@@ -402,63 +402,34 @@
         EnableViewState="false"
         CssClass="ms-quicklaunch-navmgr">
         <div>
-          <SharePoint:DelegateControl runat="server"
-            ControlId="QuickLaunchDataSource">
-           <Template_Controls>
-            <asp:SiteMapDataSource
-            SiteMapProvider="SPNavigationProvider"
-            ShowStartingNode="False"
-            id="QuickLaunchSiteMap"
-            StartingNodeUrl="sid:1025"
-            runat="server"
-            />
+          <SharePoint:DelegateControl runat="server" ControlId="QuickLaunchDataSource">
+            <Template_Controls>
+            <asp:SiteMapDataSource SiteMapProvider="SPNavigationProvider" ShowStartingNode="False" id="QuickLaunchSiteMap" StartingNodeUrl="sid:1025" runat="server" />
            </Template_Controls>
           </SharePoint:DelegateControl>
-      <SharePoint:UIVersionedContent UIVersion="3" runat="server">
-        <ContentTemplate>
-          <SharePoint:AspMenu
-            id="QuickLaunchMenu"
-            runat="server"
-            DataSourceId="QuickLaunchSiteMap"
-            Orientation="Vertical"
-            StaticDisplayLevels="2"
-            ItemWrap="true"
-            MaximumDynamicDisplayLevels="0"
-            StaticSubMenuIndent="0"
-            SkipLinkText=""
-            CssClass="s4-die"
-            >
-            <LevelMenuItemStyles>
-              <asp:MenuItemStyle CssClass="ms-navheader"/>
-              <asp:MenuItemStyle CssClass="ms-navitem"/>
-            </LevelMenuItemStyles>
-            <LevelSubMenuStyles>
-              <asp:SubMenuStyle CssClass="ms-navSubMenu1"/>
-              <asp:SubMenuStyle CssClass="ms-navSubMenu2"/>
-            </LevelSubMenuStyles>
-            <LevelSelectedStyles>
-              <asp:MenuItemStyle CssClass="ms-selectednavheader"/>
-              <asp:MenuItemStyle CssClass="ms-selectednav"/>
-            </LevelSelectedStyles>
-          </SharePoint:AspMenu>
-        </ContentTemplate>
-      </SharePoint:UIVersionedContent>
-      <SharePoint:UIVersionedContent UIVersion="4" runat="server">
-        <ContentTemplate>
-          <SharePoint:AspMenu
-            id="V4QuickLaunchMenu"
-            runat="server"
-            EnableViewState="false"
-            DataSourceId="QuickLaunchSiteMap"
-            UseSimpleRendering="true"
-            UseSeparateCss="false"
-            Orientation="Vertical"
-            StaticDisplayLevels="2"
-            MaximumDynamicDisplayLevels="0"
-            SkipLinkText=""
-            CssClass="s4-ql" />
-        </ContentTemplate>
-      </SharePoint:UIVersionedContent>
+          <SharePoint:UIVersionedContent UIVersion="3" runat="server">
+            <ContentTemplate>
+              <SharePoint:AspMenu id="QuickLaunchMenu" runat="server" DataSourceId="QuickLaunchSiteMap" Orientation="Vertical" StaticDisplayLevels="2" ItemWrap="true" MaximumDynamicDisplayLevels="0" StaticSubMenuIndent="0" SkipLinkText="" CssClass="s4-die">
+                <LevelMenuItemStyles>
+                  <asp:menuitemstyle CssClass="ms-navheader" />
+                  <asp:menuitemstyle CssClass="ms-navitem" />
+                </LevelMenuItemStyles>
+                <LevelSubMenuStyles>
+                  <asp:submenustyle CssClass="ms-navSubMenu1" />
+                  <asp:submenustyle CssClass="ms-navSubMenu2" />
+                </LevelSubMenuStyles>
+                <LevelSelectedStyles>
+                  <asp:menuitemstyle CssClass="ms-selectednavheader" />
+                  <asp:menuitemstyle CssClass="ms-selectednav" />
+                </LevelSelectedStyles>
+              </SharePoint:AspMenu>
+            </ContentTemplate>
+          </SharePoint:UIVersionedContent>
+          <SharePoint:UIVersionedContent UIVersion="4" runat="server">
+            <ContentTemplate>
+              <SharePoint:AspMenu id="V4QuickLaunchMenu" runat="server" EnableViewState="false" DataSourceId="QuickLaunchSiteMap" UseSimpleRendering="true" UseSeparateCss="false" Orientation="Vertical" StaticDisplayLevels="2" MaximumDynamicDisplayLevels="0" SkipLinkText="" CssClass="s4-ql" />
+            </ContentTemplate>
+          </SharePoint:UIVersionedContent>
         </div>
         </Sharepoint:SPNavigationManager>
       <Sharepoint:UIVersionedContent runat="server" UIVersion="3">
@@ -568,9 +539,9 @@
             <tr><td nowrap="nowrap">
             <SharePoint:SPLinkButton runat="server" NavigateUrl="~site/_layouts/recyclebin.aspx" id="v3idNavLinkRecycleBin" ImageUrl="/_layouts/images/recycbin.gif" Text="<%$Resources:wss,StsDefault_RecycleBin%>" PermissionsString="DeleteListItems" />
             </td></tr>
-            </table>
+            </tbody></table>
             </td></tr>
-            </table>
+            </tbody></table>
           </ContentTemplate>
         </SharePoint:UIVersionedContent>
         <SharePoint:UIVersionedContent UIVersion="4" runat="server" id="PlaceHolderQuickLaunchBottomV4">

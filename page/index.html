@@ -1,7 +1,13 @@
+<%@ Page language="C#" %>
+<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Import Namespace="Microsoft.SharePoint" %> <%@ Assembly Name="Microsoft.Web.CommandUI, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>
 <!doctype html>
 <html class="no-js" lang="en">
+
 <head>
-  <meta charset="utf-8">
+<meta name="WebPartPageExpansion" content="full" />
+<meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>IMPACT</title>
   <link rel="stylesheet" href="../SiteAssets/style.css">
@@ -14,8 +20,10 @@
  <header>
   <div class="container yui3-g">
    <div class="yui3-u-3-4">
-    <img src="../SiteAssets/impact.gif" alt="">
-    <h1>IMPACT</h1>
+    <SharePoint:SPLinkButton runat="server" NavigateUrl="~site/" id="onetidProjectPropertyTitle">
+     <img src="../SiteAssets/impact.gif" alt="">
+     <h1><SharePoint:ProjectProperty Property="Title" runat="server" /></h1>
+    </SharePoint:SPLinkButton>
    </div>
    <div class="yui3-u-1-4">
     <a id="upload" href="/upload">Upload</a>
@@ -102,8 +110,6 @@
    </div>
   </div>
  </section>
-
- <section
 
 </body>
 

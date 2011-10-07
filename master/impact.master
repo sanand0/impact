@@ -5,11 +5,10 @@
 <%@ Register TagPrefix="wssuc" TagName="Welcome" src="~/_controltemplates/Welcome.ascx" %>
 <%@ Register TagPrefix="wssuc" TagName="MUISelector" src="~/_controltemplates/MUISelector.ascx" %>
 <%@ Register TagPrefix="wssuc" TagName="DesignModeConsole" src="~/_controltemplates/DesignModeConsole.ascx" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="<%$Resources:wss,language_value%>" dir="<%$Resources:wss,multipages_direction_dir_value%>" runat="server" xmlns:o="urn:schemas-microsoft-com:office:office" __expr-val-dir="ltr">
 <head runat="server">
-  <meta http-equiv="X-UA-Compatible" content="IE=8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <meta name="GENERATOR" content="Microsoft SharePoint"/>
   <meta name="progid" content="SharePoint.WebPartPage.Document"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -17,6 +16,7 @@
   <SharePoint:RobotsMetaTag runat="server"/>
   <title id="onetidTitle"><asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server"/></title>
   <SharePoint:CssLink runat="server" Version="4"/>
+  <link rel="stylesheet" type="text/css" href="/Style%20Library/impact.css"/>
   <SharePoint:Theme runat="server"/>
   <SharePoint:ULSClientConfig runat="server"/>
   <script type="text/javascript">

@@ -176,31 +176,33 @@
             </div>
           </div>
           <div id="s4-topheader2" class="s4-pr s4-notdlg">
-            <a name="startNavigation"></a>
-            <div id="s4-searcharea" class="s4-search s4-rp">
-              <asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server">
-                <SharePoint:DelegateControl runat="server" ControlId="SmallSearchInputBox" Version="4"/>
-              </asp:ContentPlaceHolder>
-              <span class="s4-help">
-                <span style="height:17px;width:17px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust">
-                  <a href="#" style="height:17px;width:17px;display:inline-block;" onclick="TopHelpButtonClick('HelpHome');return false" accesskey="<%$Resources:wss,multipages_helplink_accesskey%>" id="TopHelpLink" title="<%$Resources:wss,multipages_helplinkalt_text%>" runat="server">
-                    <img src="/_layouts/images/fgimg.png" alt="<%$Resources:wss,multipages_helplinkalt_text%>" style="left:-0px !important;top:-309px !important;position:absolute;" align="absmiddle" border="0" runat="server" />
-                  </a>
-                </span>
-              </span>
-            </div>
-            <div class="s4-rp s4-app"></div>
-            <div class="s4-lp s4-toplinks">
-              <asp:ContentPlaceHolder id="PlaceHolderTopNavBar" runat="server">
-                <asp:ContentPlaceHolder id="PlaceHolderHorizontalNav" runat="server">
-                  <SharePoint:AspMenu ID="TopNavigationMenuV4" Runat="server" EnableViewState="false" DataSourceID="topSiteMap" AccessKey="<%$Resources:wss,navigation_accesskey%>" UseSimpleRendering="true" UseSeparateCss="false" Orientation="Horizontal" StaticDisplayLevels="2" MaximumDynamicDisplayLevels="1" SkipLinkText="" CssClass="s4-tn"/>
-                  <SharePoint:DelegateControl runat="server" ControlId="TopNavigationDataSource" Id="topNavigationDelegate">
-                    <Template_Controls>
-                      <asp:SiteMapDataSource ShowStartingNode="False" SiteMapProvider="SPNavigationProvider" id="topSiteMap" runat="server" StartingNodeUrl="sid:1002"/>
-                    </Template_Controls>
-                  </SharePoint:DelegateControl>
+            <div id="s4-topheader2-inner">
+              <a name="startNavigation"></a>
+              <div id="s4-searcharea" class="s4-search s4-rp">
+                <asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server">
+                  <SharePoint:DelegateControl runat="server" ControlId="SmallSearchInputBox" Version="4"/>
                 </asp:ContentPlaceHolder>
-              </asp:ContentPlaceHolder>
+                <span class="s4-help">
+                  <span style="height:17px;width:17px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust">
+                    <a href="#" style="height:17px;width:17px;display:inline-block;" onclick="TopHelpButtonClick('HelpHome');return false" accesskey="<%$Resources:wss,multipages_helplink_accesskey%>" id="TopHelpLink" title="<%$Resources:wss,multipages_helplinkalt_text%>" runat="server">
+                      <img src="/_layouts/images/fgimg.png" alt="<%$Resources:wss,multipages_helplinkalt_text%>" style="left:-0px !important;top:-309px !important;position:absolute;" align="absmiddle" border="0" runat="server" />
+                    </a>
+                  </span>
+                </span>
+              </div>
+              <div class="s4-rp s4-app"></div>
+              <div class="s4-lp s4-toplinks">
+                <asp:ContentPlaceHolder id="PlaceHolderTopNavBar" runat="server">
+                  <asp:ContentPlaceHolder id="PlaceHolderHorizontalNav" runat="server">
+                    <SharePoint:AspMenu ID="TopNavigationMenuV4" Runat="server" EnableViewState="false" DataSourceID="topSiteMap" AccessKey="<%$Resources:wss,navigation_accesskey%>" UseSimpleRendering="true" UseSeparateCss="false" Orientation="Horizontal" StaticDisplayLevels="2" MaximumDynamicDisplayLevels="1" SkipLinkText="" CssClass="s4-tn"/>
+                    <SharePoint:DelegateControl runat="server" ControlId="TopNavigationDataSource" Id="topNavigationDelegate">
+                      <Template_Controls>
+                        <asp:SiteMapDataSource ShowStartingNode="False" SiteMapProvider="SPNavigationProvider" id="topSiteMap" runat="server" StartingNodeUrl="sid:1002"/>
+                      </Template_Controls>
+                    </SharePoint:DelegateControl>
+                  </asp:ContentPlaceHolder>
+                </asp:ContentPlaceHolder>
+              </div>
             </div>
           </div>
         </div>

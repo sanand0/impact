@@ -1,0 +1,27 @@
+#s4-ribbonrow {
+  display: none;
+}
+
+.s4-title {
+  background-color: #FFFFFF;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#000000)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(left, #FFFFFF, #000000); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(left, #FFFFFF, #000000); /* FF3.6 */
+  background-image:     -ms-linear-gradient(left, #FFFFFF, #000000); /* IE10 */
+  background-image:      -o-linear-gradient(left, #FFFFFF, #000000); /* Opera 11.10+ */
+  background-image:         linear-gradient(left, #FFFFFF, #000000);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFFFFF', EndColorStr='#000000', GradientType=1); /* IE6â€“IE9 */
+}
+
+.s4-titletable {
+  font-family: "Book Antiqua", serif;
+}
+
+.s4-titletable, #s4-topheader2-inner {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.s4-title h1 {
+  font-size: 3.2em;
+}
